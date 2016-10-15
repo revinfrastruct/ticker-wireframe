@@ -3,7 +3,7 @@
 @import "_variables";
 
 body {
-    background: #eee;
+    background: #ddd;
     font-family: 'Helvetica', Arial, sans-serif;
     color: #000;
     margin: 0;
@@ -11,32 +11,23 @@ body {
 
 header {
     background: #666;
+    color: #fff;
     padding: $pad;
+    .headerContent {
+        max-width: $bp-large;
+        margin: 0 auto;
+        > h1 {
 
-    h1 {
-        color: #fff;
-        font-size: $font-size-huge;
-        margin: 0;
-    }
-
-    nav {
-        ul {
-            list-style: none;
-            padding:0;
-            li {
-                margin: 0 $pad 0 0;
-                display:inline-block;
-                a {
-                    color: #666;
-                    background: #eee;
-                    padding: $pad-half;
-                    text-decoration: none;
-
-                }
-                a.active {
-                    background: #fff;
-                    color: #000;
-                }
+            font-size: $font-size-huge;
+            margin: 0;
+        }
+        .radio {
+            .play {
+                background: #fff;
+                color: #000;
+                padding: .25em;
+                border-radius: 1em;
+                cursor: pointer;
             }
         }
     }
@@ -66,7 +57,13 @@ footer {
             font-size: $font-size-large;
             margin: 0 0 $pad-quarter;
         }
+        @media all and (max-width: $bp-large) {
 
+        }
+        @media all and (min-width: $bp-large) {
+            background: #eee;
+            padding: $pad;
+        }
         article {
             margin: 0 0 $pad;
             @media all and (max-width: $bp-large) {
@@ -91,4 +88,7 @@ footer {
 }
 .toggle {
     font-size: $font-size-med;
+}
+.description {
+    font-style: italic;
 }
