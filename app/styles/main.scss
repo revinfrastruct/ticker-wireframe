@@ -17,17 +17,19 @@ header {
         max-width: $bp-large;
         margin: 0 auto;
         > h1 {
-
             font-size: $font-size-huge;
             margin: 0;
         }
         .radio {
             .play {
+                display: inline-block;
                 background: #fff;
                 color: #000;
                 padding: .25em;
                 border-radius: 1em;
                 cursor: pointer;
+                line-height: 1em;
+                width: 1em;
             }
         }
     }
@@ -56,6 +58,10 @@ footer {
         h1 {
             font-size: $font-size-large;
             margin: 0 0 $pad-quarter;
+            .toggle {
+                font-size: $font-size-med;
+                font-weight: normal;
+            }
         }
         @media all and (max-width: $bp-large) {
 
@@ -86,9 +92,7 @@ footer {
 .hashtag {
     color: #666;
 }
-.toggle {
-    font-size: $font-size-med;
-}
+
 .description {
     font-style: italic;
 }
