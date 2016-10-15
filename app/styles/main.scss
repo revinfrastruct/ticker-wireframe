@@ -1,51 +1,94 @@
 // bower:scss
 // endbower
+@import "_variables";
 
 body {
-  background: #eee;
-  font-family: 'Helvetica', Arial, sans-serif;
-  color: #000;
-  margin:0;
+    background: #eee;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #000;
+    margin: 0;
 }
 
 header {
     background: #666;
-    padding:1em;
-    margin: 0 0 1em;
-  h1 {
-      color: #fff;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-    margin: 0;
-  }
+    padding: $pad;
+
+    h1 {
+        color: #fff;
+        font-size: $font-size-huge;
+        margin: 0;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            padding:0;
+            li {
+                margin: 0 $pad 0 0;
+                display:inline-block;
+                a {
+                    color: #666;
+                    background: #eee;
+                    padding: $pad-half;
+                    text-decoration: none;
+
+                }
+                a.active {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
 }
+
 footer {
     background: #666;
     color: #fff;
-    padding: 1em;
+    padding: $pad;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 #main {
-    padding: 1em 1em 5em;
+    padding: $pad;
+    max-width: $bp-large;
+    margin: 0 auto;
+    @media all and (max-width: $bp-large) {
+		background: #fff;
+	}
+    @media all and (min-width: $bp-large) {
+		// padding-right: $pad;
+	}
     #ticker {
         h1 {
-            margin: 0 0 .25em;
+            font-size: $font-size-large;
+            margin: 0 0 $pad-quarter;
         }
+
         article {
-            background: #fff;
-            padding: 1em;
-            margin: 0 0 1em;
+            margin: 0 0 $pad;
+            @media all and (max-width: $bp-large) {
+                border-top: thin solid #ccc;
+            }
+            @media all and (min-width: $bp-large) {
+                padding: $pad;
+                background: #fff;
+            }
         }
     }
 }
+
 .timestamp {
-    font-size: .8em;
+    font-size: $font-size-small;
     font-style: italic;
     color: #666;
 }
+
 .hashtag {
     color: #666;
+}
+.toggle {
+    font-size: $font-size-med;
 }

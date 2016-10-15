@@ -21,10 +21,17 @@
   <body>
     <header>
         <h1>Motkraft</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Live-feed</a></li>
+                <li><a href="radio.html">Radio</a></li>
+            </ul>
+        </nav>
     </header>
     <div id="main">
         <div id="ticker">
-            <h1>#nmr12nov</h1>
+            <h1>#nmr12nov <label for="feedToggle" class="toggle"><input type="checkbox" id="feedToggle" checked>Live</label></h1>
+
             <p>Beskrivning av feeden. <a href="https://twitter.com/hashtag/nmr12nov" class="hashtag">#nmr12nov</a></p>
             <article id="tickerItem1">
                 <p>Istället för att den sociala relationen döljs i varan, döljs varan i den sociala relationen (i sociala media). <a href="https://twitter.com/hashtag/marx2016" class="hashtag">#marx2016</a></p>
@@ -68,9 +75,6 @@
             </article>
         </div>
     </div>
-    <footer>
-        <p>Motkraft 2016</p>
-    </footer>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
