@@ -2,30 +2,50 @@
 // endbower
 
 body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  background: #eee;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: #000;
+  margin:0;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+header {
+    background: #666;
+    padding:1em;
+    margin: 0 0 1em;
   h1 {
+      color: #fff;
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
+    margin: 0;
   }
 }
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+footer {
+    background: #666;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#main {
+    padding: 1em 1em 5em;
+    #ticker {
+        h1 {
+            margin: 0 0 .25em;
+        }
+        article {
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1em;
+        }
+    }
+}
+.timestamp {
+    font-size: .8em;
+    font-style: italic;
+    color: #666;
+}
+.hashtag {
+    color: #666;
 }

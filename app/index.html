@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ticker wireframe</title>
+    <title>Motkraft</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -13,41 +13,72 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-      </ul>
+    <header>
+        <h1>Motkraft</h1>
+    </header>
+    <div id="main">
+        <div id="ticker">
+            <h1>#nmr12nov</h1>
+            <p>Beskrivning av feeden. <a href="https://twitter.com/hashtag/nmr12nov" class="hashtag">#nmr12nov</a></p>
+            <article id="tickerItem1">
+                <p>Istället för att den sociala relationen döljs i varan, döljs varan i den sociala relationen (i sociala media). <a href="https://twitter.com/hashtag/marx2016" class="hashtag">#marx2016</a></p>
+                <p><a href="detail.html" class="timestamp">2016-10-12 10:25</a></p>
+            </article>
+            <article id="tickerItem2">
+                <p>Transnationella sociala strejken. Koordinationen av autonoma arbetarinitiativ och social movement unionism. <a href="https://twitter.com/hashtag/marx2016" class="hashtag">#marx2016</a></p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem3">
+                <p>Nu börjar Christian Fuchs om kommunikation, kritisk teori och marxism på <a href="https://twitter.com/hashtag/marx2016" class="hashtag">#marx2016</a></p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem4">
+                <p>Marx2016 - Att förändra en förändrad värld. Så intressant schema på helgens Marxkonferens på ABF-huset. Ses där!</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem5">
+                <p>Just nu vräks sociala centret Corto Circuito i Rom. Några av de coolaste autonoma aktivister jag mött var ett gäng äldre kvinnor från Corto.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem6">
+                <p>Mot varje pris står ett politiskt pris. Mot varje ekonomi står en moralisk ekonomi. Vi betalar inte! Vårt stridsrop. I alla tider o strider.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem7">
+                <p>Självreduktioner! Den autonoma klasspraktik som inspirerade Dario Fo's Vi betalar inte, vi betalar inte.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem8">
+                <p>Okej. Det är en sån där kväll på twitter. Ni kollar på nått fåneri på teve. Då går jag tillbaka till Luke Cage igen.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem9">
+                <p>Spännande om identititärerna/alt-rights roll i Trumps valkampanj. Nyfascismen börjar stiga fram som politisk aktör.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+            <article id="tickerItem10">
+                <p>Fantastisk sågning av det nyfascistiska seminariet Identitär Idé av SDs avpolleterade gamle doldisideolog.</p>
+                <p><a href="detail.html" class="timestamp">2016-11-12 10:25</a></p>
+            </article>
+        </div>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <footer>
+        <p>Motkraft 2016</p>
+    </footer>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/moment/moment.js"></script>
+    <script src="/bower_components/moment/locale/sv.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
