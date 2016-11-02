@@ -21,17 +21,27 @@
   <body>
     <header>
         <div class="headerContent">
-            <h1>Motkraft</h1>
-            <div class="radio">
-                Radio: <span class="play"><span class="icon">►</span></span>
+            <div class="radioToggle">
+                <a href="#" title="Visa/göm radiospelare">
+                    <img src="images/radio_toggle@2x.png" srcset="images/radio_toggle.png 1x, images/radio_toggle@2x.png 2x" alt="Visa/göm radiospelare">
+                </a>
             </div>
+            <h1>Motkraft</h1>
+
         </div>
+        <div class="radioContainer">
+            <div class="playPaus">x</div>
+            <div class="progress">y</div>
+        </div>
+
     </header>
     <div id="main">
-        <div id="ticker">
-            <h1>#nmr12nov <label for="feedToggle" class="toggle"><input type="checkbox" id="feedToggle" checked>Live</label></h1>
-            <div class="description">
-                <p>12/11 har nazisterna i Nordiska motståndsrörelsen ansökt om att få demonstrera i Stockholm. <a href="https://www.facebook.com/events/1456368604376459/">Läs mer</a></p>
+        <div class="ticker">
+            <div class="header">
+                <h1>#nmr12nov</h1>
+                <div class="description">
+                    <p>12/11 har nazisterna i Nordiska motståndsrörelsen ansökt om att få demonstrera i Stockholm. <a href="https://www.facebook.com/events/1456368604376459/" class="readmore">Läs mer</a></p>
+                </div>
             </div>
             <article id="tickerItem1">
                 <p>Istället för att den sociala relationen döljs i varan, döljs varan i den sociala relationen (i sociala media). <a href="https://twitter.com/hashtag/marx2016" class="hashtag">#marx2016</a></p>
@@ -73,6 +83,7 @@
                 <p>Fantastisk sågning av det nyfascistiska seminariet Identitär Idé av SDs avpolleterade gamle doldisideolog.</p>
                 <p><a href="#" class="timestamp">2016-11-12 10:25</a></p>
             </article>
+            <button class="btn" class="archive">Äldre inlägg</button>
         </div>
     </div>
 
